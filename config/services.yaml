@@ -1,0 +1,62 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+- Top Services:
+    - Proxmox1:
+        icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+        href: https://pve1.plonko.net
+        description: Proxmox VE
+        widget:
+          type: proxmox
+          url: https://pve1.plonko.net
+          fields: ["vms", "resources.cpu", "resources.mem"]
+          username: "{{HOMEPAGE_VAR_PROXMOX_API_USER}}"
+          password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+          node: pve1 # optional
+    - Proxmox2:
+        icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+        href: https://pve2.plonko.net
+        description: Proxmox VE
+        widget:
+          type: proxmox
+          url: https://pve2.plonko.net
+          fields: ["vms", "resources.cpu", "resources.mem"]
+          username: "{{HOMEPAGE_VAR_PROXMOX_API_USER}}"
+          password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+          node: pve2 # optional
+    - Proxmox3:
+        icon: proxmox.png # icons found here https://github.com/walkxcode/dashboard-icons
+        href: https://pve3.plonko.net
+        description: Proxmox VE
+        widget:
+          type: proxmox
+          url: https://pve3.plonko.net
+          fields: ["vms", "resources.cpu", "resources.mem"]
+          username: "{{HOMEPAGE_VAR_PROXMOX_API_USER}}"
+          password: "{{HOMEPAGE_VAR_PROXMOX_API_KEY}}"
+          node: pve3 # optional
+    - PiHole1:
+        icon: pi-hole.svg # icons found here https://github.com/walkxcode/dashboard-icons
+        href: https://dns.plonko.net
+        description: Server 1
+        widget:
+          type: pihole
+          url: https://dns1.plonko.net
+          key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_1}}"
+    - PiHole2:
+        icon: pi-hole.svg # icons found here https://github.com/walkxcode/dashboard-icons
+        href: https://dns2.plonko.net
+        description: Server 2
+        widget:
+          type: pihole
+          url: https://dns2.plonko.net
+          key: "{{HOMEPAGE_VAR_PIHOLE_API_KEY_2}}"
+
+    - Cowboy:
+        icon: mdi-account-cowboy-hat-#FF0000 # icons found here https://pictogrammers.com/library/mdi/
+        href: https://localhost/
+        description: giddyup service
+    - McDonald’s:
+        icon: si-mcdonalds-#FFD700 # icons found here https://simpleicons.org/
+        href: https://www.mcdonalds.com/
+        description: homepage
